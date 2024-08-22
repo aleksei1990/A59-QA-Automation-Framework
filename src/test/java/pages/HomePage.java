@@ -26,8 +26,16 @@ public class HomePage extends BasePage {
     private WebElement playListNameInput;
     @FindBy(css = "li a.songs")
     private WebElement allSongsList;
-
-
+    @FindBy(css = "div#searchForm input[type='search']")
+    private WebElement searchSong;
+    @FindBy(xpath = "//a[contains(text(),\"Test Playlist for HW21\")]")
+    private WebElement myPlayList;
+    @FindBy(css = ".playlist:nth-child(4)")
+    private WebElement userPlayList;
+    @FindBy(css = "[name='name']")
+    private WebElement newNamePlayList;
+    @FindBy(css = "div.success.show")
+    private WebElement playListMessagePopup;
 
     //Methods
     public WebElement getUserAvatar(){
@@ -42,6 +50,34 @@ public class HomePage extends BasePage {
     public WebElement getPlayListNameInput(){
         return playListNameInput;
     }
+    public WebElement getSearchSong(){
+        return searchSong;
+    }
+    public WebElement getMyPlayList(){
+        return myPlayList;
+    }
+    public void homePlayList(){
+        getMyPlayList().click();
+    }
+    public WebElement getUserPlayList(){
+        return userPlayList;
+    }
+    public void doubleClickUserPlayList(){
+        actions.doubleClick(getUserPlayList()).perform();
+    }
+    public WebElement getNewNamePlayList(){
+        return newNamePlayList;
+    }
+    public void enterNewNamePlayList(String newPlayList){
+        actions.moveToElement(getNewNamePlayList()).perform();
+        getNewNamePlayList().sendKeys(Keys.chord(Keys.CONTROL,"A",Keys.BACK_SPACE));
+        getNewNamePlayList().sendKeys(newPlayList);
+        getNewNamePlayList().sendKeys(Keys.ENTER);
+    }
+    public WebElement successPlayListMessagePopup(){
+        return playListMessagePopup;
+    }
+
 
     public void createPlayList(String playListName){
         actions.moveToElement(getAddPlaylist()).perform();
@@ -61,5 +97,11 @@ public class HomePage extends BasePage {
 
     public void chooseAllSongsList (){
         allSongsList.click();
+    }
+    public void enterSearchSong(String songName){
+        actions.moveToElement(getSearchSong()).perform();
+        getSearchSong().click();
+        getSearchSong().clear();
+        getSearchSong().sendKeys(songName);
     }
 }
