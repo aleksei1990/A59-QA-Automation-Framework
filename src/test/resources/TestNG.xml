@@ -14,10 +14,10 @@
 <!--            <class name="RegistrationTest"/>-->
             <class name="AddSongToPlayList"/>
 <!--            <class name="PlaySong"/>-->
-<!--            <class name="Homework19"/>-->
+<!--            <class name="DeletePlayList"/>-->
 <!--            <class name="DeletePlayList"/> -->
 <!--                <class name="HomeTestLesson21"/>-->
-<!--            <class name="Homework21"/>-->
+<!--            <class name="RenamePlayList"/>-->
 <!--            <class name="AllSongTestLesson21"/>-->
 
         </classes>
