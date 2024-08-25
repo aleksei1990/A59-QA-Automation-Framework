@@ -8,17 +8,17 @@
     <test name="Example Test" preserve-order="false">
         <classes>
 
-<!--            <class name="LoginTests"/>-->
-<!--            <class name="BaseTest"/>-->
-<!--            <class name="ProfileTests"/>-->
-<!--            <class name="RegistrationTest"/>-->
+            <class name="LoginTests"/>
+            <class name="BaseTest"/>
+            <class name="ProfileTests"/>
+            <class name="RegistrationTest"/>
             <class name="AddSongToPlayList"/>
-<!--            <class name="PlaySong"/>-->
-<!--            <class name="DeletePlayList"/>-->
-<!--            <class name="DeletePlayList"/> -->
-<!--                <class name="HomeTestLesson21"/>-->
-<!--            <class name="RenamePlayList"/>-->
-<!--            <class name="AllSongTestLesson21"/>-->
+            <class name="PlaySong"/>
+            <class name="DeletePlayList"/>
+            <class name="DeletePlayList"/>
+                <class name="HomeTestLesson21"/>
+            <class name="RenamePlayList"/>
+            <class name="AllSongTestLesson21"/>
 
         </classes>
     </test>
