@@ -25,6 +25,7 @@ public class RegistrationTest extends BaseTest {
         
         //Step 3
         Assert.assertEquals(getDriver().getCurrentUrl(), urlRegistration);
+        
     }
     
 }
