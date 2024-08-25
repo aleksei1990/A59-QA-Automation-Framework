@@ -10,8 +10,6 @@ public class DeletePlayList extends BaseTest {
     @Test
 
     public void deletePlayListHW() {
-// Without 'Thread.sleep(s)'
-        
 
             LoginPage loginPage = new LoginPage(getDriver());
             HomePage homePage = new HomePage(getDriver());
